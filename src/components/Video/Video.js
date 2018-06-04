@@ -4,27 +4,29 @@ import layout from '../../styles/layout.css';
 import thumbnail from '../../images/stockimage.png';
 import playBtn from '../../images/playbtn.png';
 
-const Video = () => {
+const Video = ({ description, thumbnail_large, title, url, }) => {
 	return (
-		<div className={layout.row}>
-			<div className={styles.columnDescription}>	
-				<h2>Video Title (from videos.json)</h2>
-				<p>Video Description (from videos.json)</p>
-			</div>
-			<div className={styles.columnVideo}>
-				<a className={styles.player}>
-					<img className={styles.thumbnail} src={thumbnail} alt="Video Thumbnail" />
-					<div className={styles.playBtnOuter}>
-						<div className={styles.playBtnInner}>
-							<div className={styles.playBtn}>
-								<img src={playBtn} alt="Icon: Play" />
-								<span> Watch Video </span>
+		<figure className={styles.video}>
+			<div className={layout.row}>
+				<div className={styles.columnDescription}>	
+					<h2>{title}</h2>
+					<p dangerouslySetInnerHTML={{ __html: description }} />
+				</div>
+				<div className={styles.columnVideo}>
+					<a href={url} className={styles.player}>
+						<img className={styles.thumbnail} src={thumbnail_large} alt={title} />
+						<div className={styles.playBtnOuter}>
+							<div className={styles.playBtnInner}>
+								<div className={styles.playBtn}>
+									<img src={playBtn} alt="Icon: Play" />
+									<span> Watch Video </span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a> 
+					</a> 
+				</div>
 			</div>
-		</div>
+		</figure>
 	);
 }
 

@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.0.0-beta.47",
     "@babel/preset-stage-2": "^7.0.0-beta.47",
     "babel-loader": "^8.0.0-beta.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
