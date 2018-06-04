@@ -1,0 +1,3 @@
+.App {
+	composes: sourcePro from './typography.css';
+}
