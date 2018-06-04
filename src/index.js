@@ -1,13 +1,22 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './styles.scss';
+import styles from './styles/global.css';
+import heroImage from './images/hero-image.png';
+
+import Header from './components/Header/Header';
+import Masthead from './components/Masthead/Masthead';
+import ValuePropSection from './containers/ValuePropSection';
+import Callout from './components/Callout/Callout';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 	return (
-		<div>
-			<h3>Our Application Is Alive</h3>
-			<p>This isn’t reality. This — is fantasy.</p>
-			<p>Yes I am quoting Star Trek I cant help it.</p>
+		<div className={styles.global}>
+			<Header />
+			<Masthead />
+			<ValuePropSection />
+			<Callout />
+			<Footer />
 		</div>
 	);
 };
