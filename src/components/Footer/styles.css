@@ -1,0 +1,41 @@
+/* Footer styles */
+
+aside {
+	margin-bottom: 40px;
+}
+
+.row {
+	height: 80px;
+	composes: row alignMiddle fullHeight from '../../styles/layout.css';
+}
+
+.link {
+	composes: linkHover from '../../styles/states.css';
+	line-height: 80px;
+	padding-right: 15px;
+}
+
+.columnLogo {
+	composes: column from '../../styles/layout.css';
+}
+
+.columnContent {
+	composes: column from '../../styles/layout.css';
+}
+
+@media all and (min-width: 561px) {
+	
+	.columnLogo {
+		-ms-flex-preferred-size: 175px;
+		flex-basis: 175px;
+		max-width: 175px;
+	}
+
+	.columnContent {
+		-ms-flex-preferred-size: calc(100% - 175px);
+		flex-basis: calc(100% - 175px);
+		max-width: calc(100% - 175px);
+		text-align: right;
+	}
+}
+

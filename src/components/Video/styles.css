@@ -1,0 +1,89 @@
+/* Video styles */
+
+.columnDescription {
+	composes: column from '../../styles/layout.css';
+}
+
+.columnVideo {
+	composes: column from '../../styles/layout.css';
+}
+
+@media all and (min-width: 901px) {
+
+	.columnDescription {
+		-ms-flex-preferred-size: calc(100% - 465px);
+		flex-basis: calc(100% - 465px);
+		max-width: calc(100% - 465px);
+	}
+
+	.columnVideo {
+		-ms-flex-preferred-size: 465px;
+		flex-basis: 465px;
+		max-width: 465px;
+	}
+}
+
+.player {
+	display: block;
+	position: relative;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.thumbnail {
+	display: block;
+	width: 100%;
+}
+
+.playBtnOuter {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 6px;
+	background: rgba(0, 0, 0, 0.4);
+	transition: all .35s;
+}
+
+.playBtnOuter:hover {
+	background: rgb(238,46,29);
+	background: -moz-linear-gradient(top, rgba(238,46,29,0.6) 0%, rgba(255,177,181,0.6) 100%); 
+	background: -webkit-linear-gradient(top, rgba(238,46,29,0.6) 0%,rgba(255,177,181,0.6) 100%); 
+	background: linear-gradient(to bottom, rgba(238,46,29,0.6) 0%,rgba(255,177,181,0.6) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2e1d', endColorstr='#ffb1b5',GradientType=0 ); 
+}
+
+.playBtnOuter:hover span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.playBtnInner {
+	display: table;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.playBtn {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    transition: background .3s;
+    padding-top: 15px;
+	width: 115px;
+	height: 115px;
+}
+
+.playBtn span {
+	display: block;
+	font-weight: bold;
+	color: #4c4c51;
+	transform: translateY(15px);
+	transition: all .35s;
+	opacity: 0;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
