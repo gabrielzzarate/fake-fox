@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+		url('../fonts/SourceSansPro-Regular.woff') format('woff');
+}
+
+.sourcePro {
+	font-family: 'Source Sans Pro';
+}
+
+.h1 {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 48px;
+	color: #fff;
+}
+
+.h2 {
+	composes: blackish from './colors.css';
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.a {
+	composes: blueish from './colors.css';
+	font-size: 22px;
+	line-height: 28px;
+}
+
+/*.a:hover {
+	composes: blackish from './colors.css';
+}*/

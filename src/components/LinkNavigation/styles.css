@@ -1,0 +1,23 @@
+/* LinkNavigation styles */
+
+.column {
+	composes: column from '../../styles/layout.css';
+	-ms-flex-preferred-size: 235px;
+	flex-basis: 235px;
+	max-width: 235px;
+}
+
+.linkHeading {
+	composes: redish from '../../styles/colors.css';
+	composes: hoverOpacity from '../../styles/states.css';
+	display: block;
+	font-weight: bold;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+
+.link {
+	composes: linkHover from '../../styles/states.css';
+	display: block;
+	padding-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+/* Masthead styles */
+
+.masthead {
+	height: 630px;
+	width: 100%;
+	background: url('../../images/hero-image.png') center center no-repeat;
+	background-size: cover;
+}
+
+.row {
+	composes: row alignMiddle fullHeight from '../../styles/layout.css';
+}
+
+.container {
+	composes: container fullHeight from '../../styles/layout.css';
+}
+
+.mastheadContent {
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+.mastheadContent p {
+	max-width: 425px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+@media all and (max-width: 560px) {
+
+	.masthead {
+		height: 540px;
+	}
+}

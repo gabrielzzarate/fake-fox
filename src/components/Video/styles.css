@@ -1,0 +1,135 @@
+/* Video styles */
+
+.video {
+	padding-bottom: 40px;
+}
+
+.row {
+	composes: row from '../../styles/layout.css';
+}
+
+.columnDescription {
+	composes: column from '../../styles/layout.css';
+}
+
+.columnVideo {
+	composes: column from '../../styles/layout.css';
+}
+
+.player {
+	display: block;
+	position: relative;
+	max-width: 465px;
+	max-height: 265px;
+	width: 100%;
+	margin: 0 auto;
+	overflow-y: hidden;
+	border-radius: 6px;
+}
+
+.thumbnail {
+	display: block;
+	width: 100%;
+}
+
+.playBtnOuter {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 6px;
+	background: rgba(0, 0, 0, 0.4);
+	transition: all .35s;
+}
+
+.playBtnOuter:hover {
+	background: rgb(238,46,29);
+	background: -moz-linear-gradient(top, rgba(238,46,29,0.6) 0%, rgba(255,177,181,0.6) 100%); 
+	background: -webkit-linear-gradient(top, rgba(238,46,29,0.6) 0%,rgba(255,177,181,0.6) 100%); 
+	background: linear-gradient(to bottom, rgba(238,46,29,0.6) 0%,rgba(255,177,181,0.6) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2e1d', endColorstr='#ffb1b5',GradientType=0 ); 
+}
+
+.playBtnOuter:hover span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.playBtnInner {
+	display: table;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.playBtn {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    transition: background .3s;
+    padding-top: 15px;
+	width: 115px;
+	height: 115px;
+}
+
+.playBtn span {
+	display: block;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 0 30px rgba(0,0,0,0.7);
+	transform: translateY(15px);
+	transition: all .35s;
+	opacity: 0;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+@media all and (min-width: 901px) {
+
+	.columnDescription {
+		-ms-flex-preferred-size: calc(100% - 480px);
+		flex-basis: calc(100% - 480px);
+		max-width: calc(100% - 480px);
+		padding-right: 15px;
+	}
+
+	.columnVideo {
+		-ms-flex-preferred-size: 480px;
+		flex-basis: 480px;
+		max-width: 480px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	
+	.columnDescription {
+		order: 2;
+	}
+
+	.columnVideo {
+		order: 1;
+		padding-bottom: 15px;
+	}
+}
+
+@media all and (max-width: 560px) {
+
+	.player {
+		max-height: 180px;
+	}
+
+	.playBtn {
+		padding-top: 0;
+	}
+
+	.playBtn img {
+		height: 80px;
+		width: 80px;
+	}
+
+	.playBtn span {
+		display: none;
+	}
+}

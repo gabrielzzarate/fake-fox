@@ -1,0 +1,37 @@
+/* Header styles */
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.container {
+	composes: container fullHeight from '../../styles/layout.css';
+}
+
+.row {
+	composes: row alignMiddle fullHeight from '../../styles/layout.css';
+}
+
+.link {
+	composes: linkHover from '../../styles/states.css';
+	display: inline-block;
+	color: #fff;
+	padding-right: 70px;
+	line-height: 100px;
+}
+
+@media all and (max-width: 900px) {
+
+	.header {
+		padding: 0 15px;
+	}
+
+	.link {
+		padding-right: 30px;
+	}
+}

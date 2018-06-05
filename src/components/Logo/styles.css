@@ -1,0 +1,11 @@
+/* Logo styles */
+
+.logo {
+	composes: hoverOpacity from '../../styles/states.css';
+}
+
+@media all and (max-width: 560px) {
+	.logo img {
+		width: 38px;
+	}
+}
