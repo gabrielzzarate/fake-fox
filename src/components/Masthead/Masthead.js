@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 const Masthead = () => {
 	return (
-		<section className={styles.Masthead}>
+		<section className={styles.masthead}>
 			<div className={styles.container}>
 				<div className={styles.row}>
 					<div className={styles.mastheadContent}>

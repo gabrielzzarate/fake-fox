@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Button = ({ active, children}) => {
+const Button = ({ children }) => {
 	return (
 		<a
 			href="#"

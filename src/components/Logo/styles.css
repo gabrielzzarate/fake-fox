@@ -1,6 +1,6 @@
 /* Logo styles */
 
-.Logo {
+.logo {
 	composes: hoverOpacity from '../../styles/states.css';
 }
 

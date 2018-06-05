@@ -4,6 +4,10 @@
 	padding-bottom: 40px;
 }
 
+.row {
+	composes: row from '../../styles/layout.css';
+}
+
 .columnDescription {
 	composes: column from '../../styles/layout.css';
 }
@@ -15,15 +19,17 @@
 .player {
 	display: block;
 	position: relative;
-	max-width: 400px;
+	max-width: 465px;
+	max-height: 265px;
 	width: 100%;
 	margin: 0 auto;
+	overflow-y: hidden;
+	border-radius: 6px;
 }
 
 .thumbnail {
 	display: block;
 	width: 100%;
-	border-radius: 6px;
 }
 
 .playBtnOuter {
@@ -83,22 +89,47 @@
 @media all and (min-width: 901px) {
 
 	.columnDescription {
-		-ms-flex-preferred-size: calc(100% - 465px);
-		flex-basis: calc(100% - 465px);
-		max-width: calc(100% - 465px);
+		-ms-flex-preferred-size: calc(100% - 480px);
+		flex-basis: calc(100% - 480px);
+		max-width: calc(100% - 480px);
+		padding-right: 15px;
 	}
 
 	.columnVideo {
-		-ms-flex-preferred-size: 465px;
-		flex-basis: 465px;
-		max-width: 465px;
+		-ms-flex-preferred-size: 480px;
+		flex-basis: 480px;
+		max-width: 480px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	
+	.columnDescription {
+		order: 2;
+	}
+
+	.columnVideo {
+		order: 1;
+		padding-bottom: 15px;
 	}
 }
 
 @media all and (max-width: 560px) {
 
+	.player {
+		max-height: 180px;
+	}
+
 	.playBtn {
+		padding-top: 0;
+	}
+
+	.playBtn img {
 		height: 80px;
 		width: 80px;
+	}
+
+	.playBtn span {
+		display: none;
 	}
 }

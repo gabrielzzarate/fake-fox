@@ -6,9 +6,9 @@ const Logo = () => {
 	return (
 		<a
 			href="#"
-			className={styles.Logo}
+			className={styles.logo}
 		>
-			<img src={logo} alt="Fake Fake Ltd." />
+			<img src={logo} alt="Fake Fox" />
 		</a>
 	);
 }

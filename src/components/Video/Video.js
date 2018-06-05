@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './styles.css';
 import layout from '../../styles/layout.css';
-import thumbnail from '../../images/stockimage.png';
 import playBtn from '../../images/playbtn.png';
 
 const Video = ({ description, thumbnail_large, title, url, }) => {
 	return (
 		<figure className={styles.video}>
-			<div className={layout.row}>
+			<div className={styles.row}>
 				<div className={styles.columnDescription}>	
 					<h2>{title}</h2>
 					<p dangerouslySetInnerHTML={{ __html: description }} />

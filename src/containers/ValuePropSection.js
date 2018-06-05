@@ -4,13 +4,8 @@ import layout from '../styles/layout.css';
 import Video from '../components/Video/Video';
 
 class ValuePropSection extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			videos: null
-		};
-	}
-
+	state = { videos: null };
+	
 	async componentDidMount() {
 		const res = await fetch('https://vimeo.com/api/v2/channel/staffpicks/videos.json');
 		const videos = await res.json();
@@ -30,13 +25,10 @@ class ValuePropSection extends Component {
 	}
 
 	render() {
-		console.log('state', this.state);
 		return (
 			<section>
 				<div className={layout.container}>
-					{
-						this.renderVideos()
-					}
+					{ this.renderVideos() }
 				</div>
 			</section>
 		);

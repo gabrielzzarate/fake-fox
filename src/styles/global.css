@@ -52,6 +52,10 @@ section, footer {
 }
 
 @media all and (max-width: 560px) {
+
+	section, footer {
+		padding: 16px 24px;
+	}
 	
 	h1 {
 		font-size: 32px;

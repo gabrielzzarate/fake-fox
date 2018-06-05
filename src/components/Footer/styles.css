@@ -5,8 +5,8 @@ aside {
 }
 
 .row {
-	height: 80px;
 	composes: row alignMiddle fullHeight from '../../styles/layout.css';
+	height: 80px;
 }
 
 .link {
@@ -39,3 +39,10 @@ aside {
 	}
 }
 
+@media all and (max-width: 560px) {
+
+	.columnLogo, .columnContent {
+		text-align: center;
+		padding-top: 15px;
+	}
+}

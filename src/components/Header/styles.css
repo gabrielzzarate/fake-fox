@@ -1,6 +1,6 @@
 /* Header styles */
 
-.Header {
+.header {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -27,7 +27,7 @@
 
 @media all and (max-width: 900px) {
 
-	.Header {
+	.header {
 		padding: 0 15px;
 	}
 

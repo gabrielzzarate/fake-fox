@@ -1,6 +1,6 @@
 /* UserAccount styles */
 
-.UserAccount {
+.userAccount {
 	composes: hoverOpacity from '../../styles/states.css';
 	display: inline-block;
 	height: 52px;
@@ -9,8 +9,17 @@
 	transition: all 0.25s;
 }
 
-.UserAccount img {
+.userAccount img {
 	width: 100%;
 	border-radius: 50%;
 	border: 1px solid #fff;
+}
+
+@media all and (max-width: 560px) {
+
+	.userAccount {
+		height: 45px;
+		width: 45px;
+	}
+
 }

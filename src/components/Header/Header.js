@@ -6,7 +6,7 @@ import UserAccount from '../UserAccount/UserAccount';
 
 const Header = () => {
 	return (
-		<header className={styles.Header}>
+		<header className={styles.header}>
 			<div className={styles.container}>
 				<div className={styles.row}>
 					<div className={layout.columnLeft}>

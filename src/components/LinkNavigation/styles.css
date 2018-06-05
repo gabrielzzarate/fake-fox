@@ -1,4 +1,4 @@
-/* Linknavigation styles */
+/* LinkNavigation styles */
 
 .column {
 	composes: column from '../../styles/layout.css';

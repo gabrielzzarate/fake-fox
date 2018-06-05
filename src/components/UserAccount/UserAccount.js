@@ -5,7 +5,7 @@ import user from '../../images/daniel-seripap.jpg';
 
 const UserAccount = () => {
 	return (
-		<a className={styles.UserAccount}>
+		<a className={styles.userAccount}>
 			<img src={user} alt="User Name" />
 		</a>
 	);
