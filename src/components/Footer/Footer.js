@@ -10,8 +10,9 @@ const Footer = () => {
 		<footer>
 			<div className={layout.container}>
 				<LinkNavigation />
-				<hr />
-				<aside>
+
+				<div className={styles.footerNav}>
+					<hr />
 					<div className={layout.row}>
 						<div className={styles.columnLogo}>
 							<Logo />
@@ -22,7 +23,7 @@ const Footer = () => {
 							<a href="#" className={styles.link}>Site Map</a>
 						</div>
 					</div>
-				</aside>
+				</div>
 			</div>
 		</footer>
 	);
