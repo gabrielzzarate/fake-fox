@@ -9,7 +9,7 @@ const Video = ({ description, thumbnail_large, title, url, }) => {
 			<div className={styles.row}>
 				<div className={styles.columnDescription}>	
 					<h2>{title}</h2>
-					<p dangerouslySetInnerHTML={{ __html: description }} />
+					<div dangerouslySetInnerHTML={{ __html: description }} />
 				</div>
 				<div className={styles.columnVideo}>
 					<a href={url} className={styles.player}>

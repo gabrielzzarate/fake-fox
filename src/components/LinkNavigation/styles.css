@@ -12,12 +12,22 @@
 	composes: hoverOpacity from '../../styles/states.css';
 	display: block;
 	font-weight: bold;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	cursor: pointer;
 }
 
 .link {
 	composes: linkHover from '../../styles/states.css';
 	display: block;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+@media all and (max-width: 560px) {
+
+	.column {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		max-width: 50%;
+		padding-bottom: 15px;
+	}
 }

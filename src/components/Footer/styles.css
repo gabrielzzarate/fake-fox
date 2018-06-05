@@ -1,7 +1,7 @@
 /* Footer styles */
 
-aside {
-	margin-bottom: 40px;
+.footerNav {
+	padding: 60px 0 40px 0;
 }
 
 .row {
@@ -24,6 +24,11 @@ aside {
 }
 
 @media all and (min-width: 561px) {
+
+	.columnLogo a {
+		display: block;
+		line-height: 100px;
+	}
 	
 	.columnLogo {
 		-ms-flex-preferred-size: 175px;
@@ -40,6 +45,10 @@ aside {
 }
 
 @media all and (max-width: 560px) {
+
+	.footerNav {
+		padding: 20px 0;
+	}
 
 	.columnLogo, .columnContent {
 		text-align: center;
